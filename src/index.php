@@ -9,7 +9,7 @@ DB_PASSWORD: Contraseña del usuario e la BD
 include_once("config.php");
 
 //Consulta de selección. Selecciona todos los usuarios ordenados de manera descendente por el campo id
-$result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY name");
+$result = mysqli_query($mysqli, "SELECT * FROM gatos ORDER BY name");
 
 ?>
 
@@ -40,7 +40,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY name");
 		<li><a href="index.php">Inicio</a></li>
 		<li><a href="add.html">Alta</a></li>
 	</ul>
-	<!--<h2>Listado de trabajador@s</h2>-->
+	<!--<h2>Listado de gat@s</h2>-->
 	<table border="1">
 	<thead>
 		<tr>

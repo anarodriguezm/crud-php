@@ -56,7 +56,7 @@ $id = mysqli_real_escape_string($mysqli, $id);
 
 
 //Prepara una sentencia SQL para su ejecución. En este caso selecciona el registro a modificar y lo muestra en el formulario.				
-$stmt = mysqli_prepare($mysqli, "SELECT name, surname, age FROM users WHERE id=?");
+$stmt = mysqli_prepare($mysqli, "SELECT name, surname, age FROM gatos WHERE id=?");
 //Enlaza variables como parámetros a una setencia preparada. 
 mysqli_stmt_bind_param($stmt, "i", $id);
 //Ejecuta una consulta preparada
@@ -78,7 +78,7 @@ mysqli_close($mysqli);
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
-	<title>Modificación trabajador/a</title>
+	<title>Modificación gato/a</title>
 <!--	
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 -->
@@ -98,7 +98,7 @@ mysqli_close($mysqli);
 		<li><a href="index.php" >Inicio</a></li>
 		<li><a href="add.html" >Alta</a></li>
 	</ul>
-	<h2>Modificación trabajador/a</h2>
+	<h2>Modificación gato/a</h2>
 <!--Formulario de edición. 
 Al hacer click en el botón Guardar, llama a esta misma página: edit.php-->
 	<form action="edit.php" method="post">
@@ -126,7 +126,7 @@ Al hacer click en el botón Guardar, llama a esta misma página: edit.php-->
 
 	</main>	
 	<footer>
-	<!--Created by the IES Miguel Herrero team &copy; 2024-->
+	<!--Created by ana rodriguez team &copy; 2024-->
   	</footer>
 </div>
 </body>
