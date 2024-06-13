@@ -108,7 +108,7 @@ Al hacer click en el botón Guardar, llama a esta misma página: edit.php-->
 		</div>
 
 		<div>
-			<label for="surname">Apellido</label>
+			<label for="surname">raza</label>
 			<input type="text" name="surname" id="surname" value="<?php echo $surname;?>" required>
 		</div>
 
