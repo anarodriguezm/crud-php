@@ -45,7 +45,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM gatos ORDER BY name");
 	<thead>
 		<tr>
 			<th>Nombre</th>
-			<th>Apellido</th>
+			<th>Raza</th>
 			<th>Edad</th>
 			<th>Acciones</th>
 		</tr>
