@@ -28,7 +28,7 @@ if(isset($_POST['modifica'])) {
 	else 
 	{
 //Prepara una sentencia SQL para su ejecución. En este caso una modificación de un registro de la BD.				
-		$stmt = mysqli_prepare($mysqli, "UPDATE users SET name=?,surname=?,age=? WHERE id=?");
+		$stmt = mysqli_prepare($mysqli, "UPDATE gatos SET name=?,surname=?,age=? WHERE id=?");
 /*Enlaza variables como parámetros a una setencia preparada. 
 i: La variable correspondiente tiene tipo entero
 d: La variable correspondiente tiene tipo doble
